@@ -29,7 +29,7 @@ function FunctionalSentences() {
     <div className="w-[100%] h-auto py-16 " id='FunctionalSentences'>
       <div className="container ">
         <h3>جملات کاربردی</h3>
-        <div className="w-full h-[600px] py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto relative">
+        <div className="w-full h-[600px] py-3 lg:py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto relative">
           <div className=" hidden lg:block w-[170px] h-[170px] bg-secondary rounded-lg -rotate-45 absolute top-[85px] left-[-83px] z-10"></div>
           <div className=" hidden lg:block w-[70px] h-[70px] bg-secondary rounded-lg -rotate-45 absolute top-[-15px] left-[350px] opacity-65 z-10"></div>
           <div className=" hidden lg:block w-[190px] h-[190px] bg-secondary rounded-lg -rotate-45 absolute top-[273px] right-[-25px] opacity-85 z-10"></div>
