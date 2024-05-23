@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Gumela;
+  src: url("./asstes/fonts/Gumela.otf");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: sarvenaz;
+  src: url("./asstes/fonts/Sarvenaz.otf");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+body {
+  font-family: sarvenaz;
+  font-size: 18px;
+}
+h3{
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+  display:inline-block;
+  border-bottom: 2px solid ;
+  font-size: 24px;
+  padding:4px 0px ;
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
+a{
+  cursor: pointer;
+}
+p:lang(en_US) {
+  direction: ltr !important;
+  font-family: Gumela !important;
+  font-size: 16px !important;
+}
+.container {
+  width: 100%;
+  padding: 0 120px;
+}
+@media screen and (max-width:768px) {
+  .container{
+    padding: 0 50px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width:425px) {
+  .container{
+    padding: 0 20px;
   }
 }
