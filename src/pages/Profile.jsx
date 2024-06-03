@@ -10,7 +10,7 @@ function Profile() {
         {/* Sidebar */}
         <Sidebar />
         {/* Sections */}
-        <div className={`${sidebarFull ? ('md:ps-[280px] lg:ps-[205px]') :('ps-[70px] lg:ps-[0px]')} grid grid-cols-1 lg:grid-cols-2 justify-evenly gap-5 py-10`}>
+        <div className={`${sidebarFull ? ('md:ps-[280px] lg:ps-[210px]') :('ps-[70px] lg:ps-[0px]')} grid grid-cols-1 lg:grid-cols-2 justify-evenly gap-5 py-10`}>
           <div className="w-full h-auto shadow-md border-2 p-5">
             <div className="w-full h-[35px] border-b-2 flex justify-center items-center text-xl">یادداشت های شخصی</div>
             <p className="text-gray-400 py-5">
