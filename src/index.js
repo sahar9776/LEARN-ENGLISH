@@ -7,18 +7,24 @@ import RulesProvider from "./context/RulesContext";
 import IrregularVProvider from "./context/IrregularVContext";
 import TenseProvider from "./context/TenseContext";
 import FunSentencesProvider from "./context/FunSentencesContext";
+import SidebarProvider from "./context/SidebarContext";
+import LoginProvider from "./context/LoginContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <FunSentencesProvider>
-    <TenseProvider>
-      <IrregularVProvider>
-        <RulesProvider>
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
-        </RulesProvider>
-      </IrregularVProvider>
-    </TenseProvider>
-  </FunSentencesProvider>
+  <LoginProvider>
+    <SidebarProvider>
+      <FunSentencesProvider>
+        <TenseProvider>
+          <IrregularVProvider>
+            <RulesProvider>
+              <BrowserRouter>
+                <App />
+              </BrowserRouter>
+            </RulesProvider>
+          </IrregularVProvider>
+        </TenseProvider>
+      </FunSentencesProvider>
+    </SidebarProvider>
+  </LoginProvider>
 );

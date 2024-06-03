@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import BackToTop from "./components/BackToTop";
@@ -10,12 +10,15 @@ import FunSentencesPage from "./pages/FunSentencesPage";
 import Login from "./pages/Login";
 import LoginBtn from "./components/LoginBtn";
 import Register from "./pages/Register";
+import Profile from "./pages/Profile";
+import { LoginContext } from "./context/LoginContext";
 
 function App() {
+const {showLogBtn}=useContext(LoginContext);
   return (
     <div>
       <Header />
-      <LoginBtn />
+      {(showLogBtn)&& (<LoginBtn />)}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
@@ -24,6 +27,7 @@ function App() {
         <Route path="/functional-sentences/:category" element={<FunSentencesPage />}/>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register/>} />
+        <Route path="/profile" element={<Profile/>} />
       </Routes>
       <BackToTop />
     </div>
