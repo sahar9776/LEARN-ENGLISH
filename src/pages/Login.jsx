@@ -1,7 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, Navigate } from 'react-router-dom'
 import { useFormik } from 'formik'
 import * as yup from 'yup'
+import axios from 'axios'
 
 function Login() {
   const formik = useFormik({
@@ -9,7 +10,10 @@ function Login() {
       email: "",
       password: ""
     },
-    onSubmit: values => {
+    onSubmit:  (values) => {
+      // const response=  axios.post('https://reqres.in/api/login',values);
+      // localStorage.setItem('token',response.data.token);
+      window.location.replace('/profile')
       alert("خوش آمدید!")
     },
     validationSchema: yup.object({

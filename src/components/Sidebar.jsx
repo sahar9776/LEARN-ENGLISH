@@ -12,7 +12,7 @@ import { IoBook } from 'react-icons/io5'
 function Sidebar() {
     const { sidebarFull, changeSidebar } = useContext(SidebarContext);
     return (
-        <div className={`${sidebarFull ? ('w-full px-8 md:w-[50%] lg:w-[320px] lg:px-4') : ('w-[70px] px-1')} mx-auto min-h-[100%] py-5 fixed right-0 top-0 bg-secondary`}>
+        <div className={`${sidebarFull ? ('w-full px-8 md:w-[38%] lg:w-[320px] lg:px-4') : ('w-[70px] px-1')} mx-auto min-h-[100%] py-5 fixed right-0 top-0 bg-secondary`}>
             {
                 sidebarFull ? (
                     <div>
