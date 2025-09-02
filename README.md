@@ -1,27 +1,22 @@
 # LEARN-ENGLISH
 
-یک اپلیکیشن آموزش زبان انگلیسی ساخته‌شده با React و TailwindCSS، افزون بر استقرار در پلتفرم Vercel.
+A simple and modern web application for learning English.  
+This project is designed to help learners practice English vocabulary, grammar, and basic exercises through a clean and responsive interface.
 
-## ویژگی‌ها
+## GitHub repository
 
-- رابط کاربری مدرن و واکنش‌گرا با React
-- استفاده از TailwindCSS برای طراحی تمیز و قابل سفارشی
-- بهره‌گیری از ساختار Create React App برای استقرار آسان
-- قابلیت استقرار سریع در Vercel با هر بار Push به گیت
+git clone https://github.com/sahar9776/LEARN-ENGLISH.git
 
-## پیش‌نیازها
+## 🚀 Live Demo
 
-- Node.js (نسخه پیشنهاد‌شده: 16+)
-- npm یا yarn
+[View Demo](https://learn-english-psi.vercel.app/)
 
-## نصب و اجرای پروژه
+## ✨ Features
 
-1. کلون کردن مخزن:
-   ```bash
-   git clone https://github.com/sahar9776/LEARN-ENGLISH.git
-   cd LEARN-ENGLISH
-   ```
+- 📚 Organized lessons for vocabulary and grammar
+- 📝 Practice section for exercises and quizzes
+- 📱 Fully responsive design (mobile-friendly)
+- ⚡ Built with **React** + **Tailwind CSS** for speed and flexibility
+- 🎨 Minimal and clean UI for better focus on learning
 
-## vercel.com
-
-https://learn-english-psi.vercel.app/
+## 📂 Folder Structure
