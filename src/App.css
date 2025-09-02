@@ -1,13 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: Gumela;
-  src: url("./asstes/fonts/Gumela.otf");
+  src: url("../public/fonts/Gumela.woff2");
 }
 @font-face {
-  font-family: sarvenaz;
-  src: url("./asstes/fonts/Sarvenaz.otf");
+  font-family: Vazir;
+  src: url("../public/fonts/Vazir.woff2");
 }
 * {
   margin: 0;
@@ -16,42 +17,19 @@
   direction: rtl;
 }
 body {
-  font-family: sarvenaz;
-  font-size: 18px;
+  font-family: Vazir;
+  font-size: 18px !important;
+  overflow-x: hidden !important;
 }
-h3{
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-  --tw-text-opacity: 1;
-  display:inline-block;
-  border-bottom: 2px solid ;
-  font-size: 24px;
-  padding:4px 0px ;
-  --tw-border-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-border-opacity));
-}
-a{
-  cursor: pointer;
-}
-label,input{
+label,
+input {
   display: inline-block;
   font-size: 20px;
+}
+a {
+  cursor: pointer;
 }
 p:lang(en_US) {
   direction: ltr !important;
   font-family: Gumela !important;
-  font-size: 16px !important;
-}
-.container {
-  width: 100%;
-  padding: 0 120px;
-}
-@media screen and (max-width:768px) {
-  .container{
-    padding: 0 50px;
-  }
-}
-@media screen and (max-width:425px) {
-  .container{
-    padding: 0 20px;
-  }
 }

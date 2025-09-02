@@ -2,15 +2,26 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {
-      colors:{
-        'primary':'#0c1a1a',
-        'secondary':'#037272',
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
-      rotate:{
-        '21':'21deg',
+    },
+    extend: {
+      colors: {
+        gold: "#d4af37",
+        primary: "#037272",
+        secondary: "#FDCB58"
+      },
+      rotate: {
+        21: "21deg",
       },
     },
   },
   plugins: [],
-}
+};

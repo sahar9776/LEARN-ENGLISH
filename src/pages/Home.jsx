@@ -1,28 +1,21 @@
-import React from 'react'
-import Banner from '../components/Banner'
-import Rules from '../components/Rules'
-import Times from '../components/Times'
-import IrregularVerbs from '../components/IrregularVerbs'
-import FunctionalSentences from '../components/FunctionalSentences'
-import Footer from '../components/Footer'
+import Courses from "../components/Courses";
+import Hero from "../components/Hero";
+import RoadMap from "../components/RoadMap";
+import Quizzes from "../components/Quizzes";
+import EducationalVideos from "../components/EducationalVideos";
 
 function Home() {
   return (
-    <div className='w-[100%] max-w-full' id='Home' >
-      {/* بنر  */}
-      <Banner/>
-      {/* گرامر */}
-      <Rules/>
-      {/* زمان افعال  */}
-      <Times/>
-      {/* افعال بی قاعده  */}
-      <IrregularVerbs/>
-      {/* جملات کاربردی  */}
-      <FunctionalSentences/>
-      {/* فوتر */}
-      <Footer/>
+    <div className="min-w-screen h-auto">
+      <div className="container mx-auto">
+        <Hero />
+        <Courses />
+        <RoadMap />
+        <Quizzes />
+        <EducationalVideos />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

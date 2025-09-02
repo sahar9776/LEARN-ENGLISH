@@ -1,57 +1,35 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { FaTelegramPlane } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
-import { FaWhatsapp } from 'react-icons/fa'
-import books from '../asstes/imges/books.png'
+import { Link } from "react-router-dom";
+import { footerList } from "../asstes/data/db";
+import Logo from "./Logo";
 
 function Footer() {
-    return (
-        <div className='w-full h-[400px] py-3 md:py-16 bg-secondary relative overflow-hidden'>
-            <div className="container">
-                <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    {/* right  */}
-                    <div className="w-full">
-                        <h4 className="text-3xl">نقشه سایت</h4>
-                        <ul className="my-2">
-                            <li className='my-2'>
-                                <Link to='/' className="text-primary border-b-2 border-secondary hover:border-primary">خانه</Link>
-                            </li>
-                            <li className='my-2'>
-                                <Link to='/about-us' className='text-primary border-b-2 border-secondary hover:border-primary'>درباره ما</Link>
-                            </li>
-                            <li className='my-2'>
-                                <Link to='/rules-details/wordOrder' className='text-primary border-b-2 border-secondary hover:border-primary'>قواعد</Link>
-                            </li>
-                            <li className='my-2'>
-                                <Link to='/tense-Verbs' className='text-primary border-b-2 border-secondary hover:border-primary'>زمان افعال</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    {/* middle  */}
-                    <div className="w-full">
-                        <h4 className="text-3xl">راه های ارتباط مستقیم با ما</h4>
-                        <ul className="my-2">
-                            <li className="my-2">تلفن : ....</li>
-                            <li className="my-2">ایمیل : ....</li>
-                            <li className="my-2">آدرس : ....</li>
-                        </ul>
-                    </div>
-                    {/* left  */}
-                    <Link to='/' className="hidden lg:block w-[250px] h-[250px] rounded-full shadow-md shadow-white ms-auto relative">
-                        <img src={books} alt="" className="w-full h-auto absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-30%]" />
-                        <p className="text-xl absolute top-[85%] left-[50%] translate-x-[-50%] translate-y-[-85%]">آموزش انگلیسی</p>
-                    </Link>
-                </div>
-            </div>
-            {/* bottom  */}
-            <div className="w-full h-[50px] bg-primary absolute bottom-0 flex justify-center items-center">
-                <FaTelegramPlane className='text-blue-500 mx-1 text-3xl cursor-pointer' />
-                <FaInstagram className='text-red-500 mx-1 text-3xl cursor-pointer' />
-                <FaWhatsapp className='text-green-500 mx-1 text-3xl cursor-pointer' />
-            </div>
+  return (
+    <div className="w-full h-96 lg:h-56 overflow-hidden relative">
+      <div className="w-full h-full bg-secondary/90 lg:bg-secondary absolute top-0 lg:-top-10 -left-20 lg:-left-[600px] -rotate-45 z-10" />
+      <div className="w-full h-full bg-primary/90 lg:bg-primary absolute top-0 lg:-top-10 -right-20 lg:-right-[600px] rotate-45 z-10" />
+
+      <div
+      className="container mx-auto text-center absolute top-[50%] -translate-y-[50%]
+      left-[50%] -translate-x-[50%] z-50 flex flex-col lg:flex-row justify-center items-center"
+      >
+        <div className="w-full lg:w-[40%] h-1/2 flex justify-center
+         lg:justify-start lg:border-l-2 lg:border-gold">
+          <Logo />
         </div>
-    )
+
+        <div className="w-full g:w-[60%] h-1/2 flex flex-col lg:flex-row items-center justify-center gap-2.5 lg:gap-5 lg:pr-10 lg:mt-2">
+          {footerList.map((item) => (
+            <Link key={item.id} to={item.url}
+              className="font-semibold text-lg lg:text-2xl text-white lg:text-black/85 pb-1.5
+              border-b-2 border-transparent duration-700 ease-linear
+             hover:text-secondary hover:border-secondary lg:hover:text-primary lg:hover:border-primary">
+              {item.title}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
