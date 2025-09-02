@@ -1,7 +1,7 @@
 import exam from "../asstes/imges/exam.jpg"
 
 function ExamIntroduction() {
-  const buttonsContent = ["ثبت نام در آزمون های مجازی", "ثبت نام در آزمون های حضوری"]
+  // const buttonsContent = ["ثبت نام در آزمون های مجازی", "ثبت نام در آزمون های حضوری"]
 
   return (
     <div className="w-full h-[480px] lg:h-[620px]">

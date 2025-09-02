@@ -4,7 +4,6 @@ import Logo from "./Logo"
 import { Link } from "react-scroll"
 import { navList } from "../asstes/data/db"
 import { IoClose } from "react-icons/io5";
-import { BsChatLeftDotsFill , BsQuestionLg } from "react-icons/bs";
 
 function SidebarMenu() {
   const { isOpen, setIsOpen } = useContext(SidebarMenuContext)
